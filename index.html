@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Milky Way</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <nav>
+        <ul>
+            <li><a href="index.html" aria-current="page">Milky Way</a></li>
+            <li><a href="jupiter.html">Jupiter</a></li>
+            <li><a href="about.html">About</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+
+    <!-- HERO -->
+    <h4 style="color: var(--neon-green); letter-spacing: 0.4em;">SYSTEM: MILKY WAY</h4>
+
+    <h1>The Glowing River</h1>
+
+    <p class="subtitle">
+        Our home galaxy contains billions of stars and cosmic structures.
+        This minimalist interface presents it with clarity and light.
+    </p>
+
+    <img src="Images/milkyway-light.jpg" class="main-img">
+
+    <button class="btn-green" onclick="location.href='jupiter.html'">
+        Initialize Exploration
+    </button>
+
+
+    <!-- ABOUT MILKY WAY -->
+    <section style="margin-top: 80px; text-align:center;">
+        <h2>About the Milky Way</h2>
+
+        <p class="subtitle">
+            The Milky Way is a barred spiral galaxy spanning over 100,000 light-years.
+            It contains between 100 to 400 billion stars, including our Sun, and is
+            surrounded by a massive halo of dark matter.
+        </p>
+
+        <p class="subtitle">
+            From Earth, it appears as a glowing band across the night sky — a result of
+            looking inward through its dense galactic plane filled with stars, gas, and dust.
+        </p>
+    </section>
+
+
+    <!-- QUICK FACTS -->
+    <section style="margin-top: 60px;">
+        <div class="grid-2">
+
+            <div class="stat-box">
+                <p><strong>Type:</strong> Barred Spiral Galaxy</p>
+                <p><strong>Diameter:</strong> ~100,000 light-years</p>
+                <p><strong>Stars:</strong> 100–400 billion</p>
+            </div>
+
+            <div class="stat-box">
+                <p><strong>Age:</strong> ~13.6 billion years</p>
+                <p><strong>Black Hole:</strong> Sagittarius A*</p>
+                <p><strong>Location:</strong> Local Group</p>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- VIDEO SECTION (YOU WILL ADD VIDEO) -->
+    <section style="margin-top: 80px; text-align:center;">
+        <h2>Visual Exploration</h2>
+
+        <p class="subtitle">
+            Watch a journey through our galaxy — from its spiral arms to its galactic core.
+        </p>
+
+        <video autoplay muted loop playsinline 
+        style="width:100%; max-width:700px; margin-top:20px; border:1px solid var(--glass-border);">
+        <source src="Videos/milkyway.mp4" type="video/mp4">
+        </video>
+    </section>
+
+
+    <!-- IMAGE GRID (TABLE STYLE BUT MODERN) -->
+    <section style="margin-top: 80px; text-align:center;">
+        <h2>Galactic Structures</h2>
+
+        <div class="gallery">
+
+            <div class="card">
+                <img src="Images/mw1.jpg">
+                <p style="font-size:0.7rem; margin-top:10px;">GALACTIC CORE</p>
+            </div>
+
+            <div class="card">
+                <img src="Images/mw2.jpg">
+                <p style="font-size:0.7rem; margin-top:10px;">SPIRAL ARM</p>
+            </div>
+
+            <div class="card">
+                <img src="Images/mw3.jpg">
+                <p style="font-size:0.7rem; margin-top:10px;">NEBULA REGION</p>
+            </div>
+
+            <div class="card">
+                <img src="Images/mw4.jpg">
+                <p style="font-size:0.7rem; margin-top:10px;">STAR CLUSTER</p>
+            </div>
+
+        </div>
+    </section>
+
+
+</main>
+
+</body>
+</html>
