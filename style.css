@@ -1,6 +1,4 @@
-/* ===============================
-   ROOT
-================================= */
+/* root */
 :root {
     --bg-white: #ffffff;
     --bg-mint: #f9fffb;
@@ -11,9 +9,7 @@
     --soft-shadow: 0 10px 30px rgba(0, 255, 136, 0.05);
 }
 
-/* ===============================
-   BASE
-================================= */
+/* Base */
 * {
     margin: 0;
     padding: 0;
@@ -39,9 +35,7 @@ body::before {
     z-index: -1;
 }
 
-/* ===============================
-   NAV
-================================= */
+/* NAV */
 header {
     position: fixed;
     top: 0;
@@ -74,9 +68,7 @@ nav a:hover {
     color: var(--neon-green);
 }
 
-/* ===============================
-   MAIN
-================================= */
+/* Main */
 main {
     margin-top: 140px;
     padding: 2rem;
@@ -86,9 +78,7 @@ main {
     text-align: center;
 }
 
-/* ===============================
-   TYPOGRAPHY
-================================= */
+/* Typography */
 h1 {
     font-size: 2.5rem;
     text-align: center;
@@ -107,9 +97,7 @@ h3 {
     text-align: center;
 }
 
-/* ===============================
-   BUTTON
-================================= */
+/* button */
 .btn-green {
     background: var(--neon-green);
     color: #000;
@@ -127,9 +115,7 @@ h3 {
     box-shadow: 0 0 20px rgba(0,255,136,0.4);
 }
 
-/* ===============================
-   IMAGE
-================================= */
+/* Image */
 .main-img {
     width: 100%;
     max-width: 700px;        
@@ -138,14 +124,12 @@ h3 {
 }
 .gallery img {
     width: 100%;
-    height: 180px;           /* keeps them same size */
-    object-fit: cover;       /* crops nicely instead of stretching */
+    height: 180px;          
+    object-fit: cover;       
     border: 1px solid var(--glass-border);
 }
 
-/* ===============================
-   JUPITER GRID
-================================= */
+/* Juipter grid */
 .grid-2 {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -159,9 +143,7 @@ h3 {
     margin-top: 20px;
 }
 
-/* ===============================
-   ABOUT GRID
-================================= */
+/* About grid */
 
 .tagline {
     text-align: center;
@@ -217,9 +199,7 @@ h3 {
     color: var(--neon-green);
 }
 
-/* ===============================
-   RESPONSIVE
-================================= */
+/* responsiveness */
 @media (max-width: 900px) {
     .grid-2 {
         grid-template-columns: 1fr;
