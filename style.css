@@ -1,10 +1,10 @@
 /* root */
 :root {
-    --bg-white: #ffffff;
-    --bg-mint: #f9fffb;
-    --neon-green: #006c41;
-    --dark-text: #1a1a1a;
-    --grey-text: #666666;
+    --bg-white: rgba(15, 1, 56, 0.8);;
+    --bg-mint: rgba(15, 1, 56, 0.8);
+    --neon-green:#b7adff;
+    --dark-text: #ffffff;
+    --grey-text: #ffffff;
     --glass-border: rgba(0, 255, 136, 0.2);
     --soft-shadow: 0 10px 30px rgba(0, 255, 136, 0.05);
 }
@@ -30,9 +30,19 @@ body::before {
     inset: 0;
     background-image:
         linear-gradient(rgba(0, 255, 136, 0.05) 1px, transparent 1px),
-        linear-gradient(90deg, rgba(0, 255, 136, 0.05) 1px, transparent 1px);
-    background-size: 40px 40px;
+        linear-gradient(90deg, rgba(0, 255, 136, 0.05) 1px, transparent 1px),
+        linear-gradient(rgba(10, 20, 50, 0.6), rgba(10, 20, 50, 0.6)), /* Dark Blue/Transparent overlay */
+        url('images/nasa-discovery-mission.webp');
+    background-size: 40px 40px, 40px 40px, auto, cover;
+    background-position: center;
+    background-repeat: no-repeat;
     z-index: -1;
+    animation: slowPan 60s linear infinite alternate;
+}
+
+@keyframes slowPan {
+  from { background-position: 0% 0%; }
+  to { background-position: 100% 100%; }
 }
 
 /* NAV */
@@ -40,7 +50,7 @@ header {
     position: fixed;
     top: 0;
     width: 100%;
-    background: rgba(255,255,255,0.8);
+    background: rgba(15, 1, 56, 0.8);
     backdrop-filter: blur(10px);
     border-bottom: 1px solid var(--glass-border);
     padding: 1.5rem 0;
